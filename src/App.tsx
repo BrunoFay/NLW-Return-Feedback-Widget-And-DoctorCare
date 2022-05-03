@@ -1,9 +1,12 @@
-import Widget from "./components/Widget";
+import Widget from "./components/WidgetButton";
+import FeedBackProvider from "./context/FeedBackProvider";
 export function App() {
 
   return (
     <>
-      <Widget />
+      <FeedBackProvider>
+        <Widget />
+      </FeedBackProvider>
     </>
   )
 }
