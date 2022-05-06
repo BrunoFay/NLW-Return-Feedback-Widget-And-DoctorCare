@@ -27,6 +27,7 @@ export default function FeedBackContentStep() {
       comment: feedBackComment,
       screenshot: screenShot
     })
+    
     setIsFeedbackSend(false)
     setFeedbackSendSuccessfully(true)
   }
