@@ -7,8 +7,8 @@ export interface IContext {
   feedBackTypeState: string,
   setFeedBackTypeState: (type: string) => void,
   FEEDBACK_TYPES: IFEEDBACK_TYPES,
-  feedBackSend: string,
-  setFeedBackSend: (b: boolean) => void,
+  feedbackSendSuccessfully: string,
+  setFeedbackSendSuccessfully: (b: boolean) => void,
   resetFeedBack: () => void
 }
 const feedBackContext = createContext<IContext | {}>({})

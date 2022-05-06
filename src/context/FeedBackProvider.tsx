@@ -35,18 +35,18 @@ export type FeedbackTypes = keyof typeof FEEDBACK_TYPES
 
 const FeedBackProvider: React.FC<IFeedbackProviderProps> = (props) => {
   const [feedBackTypeState, setFeedBackTypeState] = useState<FeedbackTypes | null>(null)
-  const [feedBackSend, setFeedBackSend] = useState<boolean>(false)
+  const [feedbackSendSuccessfully, setFeedbackSendSuccessfully] = useState<boolean>(false)
 
   const resetFeedBack=()=>{
-    setFeedBackSend(false)
+    setFeedbackSendSuccessfully(false)
     setFeedBackTypeState(null)
   }
   const valuesToPRovide = {
     feedBackTypeState,
     setFeedBackTypeState,
     FEEDBACK_TYPES,
-    setFeedBackSend,
-    feedBackSend,
+    setFeedbackSendSuccessfully,
+    feedbackSendSuccessfully,
     resetFeedBack
   }
   return (

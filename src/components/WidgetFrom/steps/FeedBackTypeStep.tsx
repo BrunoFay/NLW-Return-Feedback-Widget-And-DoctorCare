@@ -11,7 +11,7 @@ export default function FeedBackTypeStep() {
    <>
       <header className='flex'>
           <span className='text-xl leading-6' >
-            Send your FeedBack
+            Send your Feedback
           </span>
           <CloseButton />
         </header>
