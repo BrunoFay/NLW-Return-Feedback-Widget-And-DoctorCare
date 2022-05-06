@@ -22,16 +22,21 @@ export default function FeedBackContentStep() {
   const handleSubmitFeedBack = async (e: FormEvent) => {
     e.preventDefault()
     setIsFeedbackSend(true)
-    await api.post('/feedbacks', {
-      type: feedBackTypeState,
-      comment: feedBackComment,
-      screenshot: screenShot
-    })
-    
+    screenShot ?
+      await api.post('/feedbacks', {
+        type: feedBackTypeState,
+        comment: feedBackComment,
+        screenshot: screenShot
+      }) :
+      await api.post('/feedbacks', {
+        type: feedBackTypeState,
+        comment: feedBackComment,
+      })
+
     setIsFeedbackSend(false)
     setFeedbackSendSuccessfully(true)
   }
-  
+
   return (
     <>
       <header className='flex'>
