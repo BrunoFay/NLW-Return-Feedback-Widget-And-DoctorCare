@@ -27,11 +27,12 @@ export default function FeedBackContentStep() {
         type: feedBackTypeState,
         comment: feedBackComment,
         screenshot: screenShot
-      }) :
+      }).then(res => console.log(res)) :
       await api.post('/feedbacks', {
         type: feedBackTypeState,
         comment: feedBackComment,
-      })
+      }).then(res => console.log(res))
+
 
     setIsFeedbackSend(false)
     setFeedbackSendSuccessfully(true)
