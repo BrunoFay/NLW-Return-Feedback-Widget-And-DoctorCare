@@ -3,7 +3,7 @@ import { Popover } from '@headlessui/react'
 import WidgetForm from './WidgetFrom'
 export default function WidgetButton() {
   return (
-    <Popover className=" absolute right-5 bottom-5 flex items-end flex-col">
+    <Popover className=" fixed right-5 bottom-3 flex items-end flex-col">
       <Popover.Panel>
         <WidgetForm />
       </Popover.Panel>

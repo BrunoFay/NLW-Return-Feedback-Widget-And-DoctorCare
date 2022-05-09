@@ -6,6 +6,11 @@ module.exports = {
         mainYellow: {
           800: '#FFBF00',
           500: '#ffe302'
+        },
+        brandColor:{
+          100:'#FFFAF1',
+          200:'#DCE9E2',
+          500: '#00856F',
         }
       },
       borderRadius: {

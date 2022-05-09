@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,FC } from 'react'
 import FeedbackContext from './feedBackContext';
 import BugImage from '../assets/bug.svg'
 import IdeaImage from '../assets/idea.svg'
@@ -33,7 +33,7 @@ export const FEEDBACK_TYPES = {
 
 export type FeedbackTypes = keyof typeof FEEDBACK_TYPES
 
-const FeedBackProvider: React.FC<IFeedbackProviderProps> = (props) => {
+const FeedBackProvider: FC<IFeedbackProviderProps> = (props) => {
   const [feedBackTypeState, setFeedBackTypeState] = useState<FeedbackTypes | null>(null)
   const [feedbackSendSuccessfully, setFeedbackSendSuccessfully] = useState<boolean>(false)
 
