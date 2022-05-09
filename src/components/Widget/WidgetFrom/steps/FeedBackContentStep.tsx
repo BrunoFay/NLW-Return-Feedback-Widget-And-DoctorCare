@@ -20,23 +20,24 @@ export default function FeedBackContentStep() {
   const [isFeedbackSend, setIsFeedbackSend] = useState<boolean>(false)
 
   const handleSubmitFeedBack = async (e: FormEvent) => {
-    let response;
     e.preventDefault()
     setIsFeedbackSend(true)
     screenShot ?
-      response = await api.post('/feedbacks', {
+      await api.post('/feedbacks', {
         type: feedBackTypeState,
         comment: feedBackComment,
         screenshot: screenShot
-      }) :
-      response = await api.post('/feedbacks', {
-        type: feedBackTypeState,
-        comment: feedBackComment,
-      })
-      if(response){
+      }).finally(() => {
         setIsFeedbackSend(false)
         setFeedbackSendSuccessfully(true)
-      }
+      }) :
+      await api.post('/feedbacks', {
+        type: feedBackTypeState,
+        comment: feedBackComment,
+      }).finally(() => {
+        setIsFeedbackSend(false)
+        setFeedbackSendSuccessfully(true)
+      })
   }
 
   return (
