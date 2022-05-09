@@ -1,7 +1,7 @@
 import { ArrowLeft } from 'phosphor-react'
 import { FormEvent, useContext, useState } from 'react'
-import feedBackContext, { IContext } from '../../../context/feedBackContext'
-import { api } from '../../../service/api'
+import feedBackContext, { IContext } from '../../../../context/feedBackContext'
+import { api } from '../../../../service/api'
 import CloseButton from '../../CloseButton'
 import Loading from '../../Loading'
 import ScreenshotButton from '../ScreenshotButton'
@@ -33,9 +33,10 @@ export default function FeedBackContentStep() {
         type: feedBackTypeState,
         comment: feedBackComment,
       })
-    console.log(response);
-    setIsFeedbackSend(false)
-    setFeedbackSendSuccessfully(true)
+      if(response){
+        setIsFeedbackSend(false)
+        setFeedbackSendSuccessfully(true)
+      }
   }
 
   return (

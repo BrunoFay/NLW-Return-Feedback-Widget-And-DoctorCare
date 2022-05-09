@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import feedBackContext, { IContext } from '../../context/feedBackContext'
+import feedBackContext, { IContext } from '../../../context/feedBackContext'
 import FeedBackContentStep from './steps/FeedBackContentStep'
 import FeedBackSuccessStep from './steps/FeedBackSuccessStep'
 import FeedBackTypeStep from './steps/FeedBackTypeStep'

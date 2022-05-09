@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import feedBackContext, { IContext } from "../../../context/feedBackContext";
+import feedBackContext, { IContext } from "../../../../context/feedBackContext";
 import CloseButton from "../../CloseButton";
 
 export default function FeedBackSuccessStep() {

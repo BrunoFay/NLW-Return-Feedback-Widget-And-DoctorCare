@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import feedBackContext, { IContext, IFEEDBACK_TYPES } from "../../../context/feedBackContext";
-import { FeedbackTypes } from "../../../context/FeedBackProvider";
+import feedBackContext, { IContext, IFEEDBACK_TYPES } from "../../../../context/feedBackContext";
+import { FeedbackTypes } from "../../../../context/FeedBackProvider";
 import CloseButton from "../../CloseButton";
 
 
