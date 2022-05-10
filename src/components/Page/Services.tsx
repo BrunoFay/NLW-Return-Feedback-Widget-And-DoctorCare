@@ -40,7 +40,7 @@ export default function Services() {
   });
 
   return (
-    <main id='services' className="w-[23.438rem] h-[127.125rem] text-center flex flex-col" >
+    <section id='services' className="w-[23.438rem] h-[127.125rem] text-center flex flex-col" >
       <section className="mt-[7.875rem] h-[9.625rem] w-[19.625rem] mx-auto gap-4 flex flex-col">
         <h4 className="text-brandColor-500 font-bold text-base">SERVIÇOS</h4>
         <h2 className="font-bold text-3xl w-[19.625rem] h-[7.313rem] text-[#212529] ">Como podemos ajudá-lo a se sentir melhor?
@@ -55,6 +55,6 @@ export default function Services() {
           </div>
         ))}
       </section>
-    </main>
+    </section>
   )
 }

@@ -3,7 +3,6 @@ nav {
 
 }
 
-
 #scroll-header {
   @apply bg-brandColor-500 w-[100vw] z-50;
 
@@ -11,7 +10,6 @@ nav {
 
 #scroll-header .open-menu {
   @apply static;
-
 }
 
 #scroll-header svg:nth-child(1) path {
@@ -83,12 +81,6 @@ nav {
     @apply absolute right-0 mr-3;
 
   }
-
-  #scroll-header {
-    @apply bg-brandColor-500 w-[100vw] z-50;
-
-  }
-
   #scroll-header .open-menu {
     @apply absolute right-0;
 
@@ -105,4 +97,5 @@ nav {
   .doctor-img {
     @apply w-[20.438rem]
   }
+
 }

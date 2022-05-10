@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <section id='contact' className='w-[23.438rem] h-[45.938rem] flex flex-col items-center'>
-      <div ref={ref}>
+      <div className='flex self-start flex-col items-start' ref={ref}>
         <div className='flex self-start flex-col items-start text-left px-6 mt-[6.25rem] pt-[1.25rem] gap-8'>
           <h2 className='font-bold text-3xl w-[18.563rem]'>Entre em contato com a gente!</h2>
           <ul className='flex flex-col gap-4'>

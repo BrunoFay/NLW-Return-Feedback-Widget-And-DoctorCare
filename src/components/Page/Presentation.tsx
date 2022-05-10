@@ -20,7 +20,7 @@ export default function Presentation() {
   const { ref } = useParallax<HTMLImageElement>({ opacity: [0, 2, 'easeInOut'] });
   return (
     <>
-      <div id="beggin" className="pt-[4.5rem] ">
+      <section id="beggin" className="pt-[4.5rem] ">
         <h4 className="font-normal text-sm text-brandColor-500 mt-10 mx-[3.75rem]" >BOAS-VINDAS A DOCTORCARE 👋</h4>
         <h1 className="font-bold self-center text-4xl w-[20.438rem] mt-4 mx-6" >Assistência médica simplificada para todos</h1>
         <p className="font-normal text-lg mt-6 mx-6" >Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
@@ -38,7 +38,7 @@ export default function Presentation() {
           )
           )}
         </div>
-      </div>
+      </section>
     </>
   )
 }
