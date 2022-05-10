@@ -1,16 +1,19 @@
 import Widget from "./components/Widget/WidgetButton";
-import Presentation from "./components/Page/Presentation";
-import FeedBackProvider from "./context/FeedBackProvider";
+import Main from "./components/Page/Main";
+import { useContext } from "react";
+import  navbarContext, { INavbarContext }  from "./context/navbarContext";
 
 export function App() {
+  const { isNavbarOpen } = useContext(navbarContext) as INavbarContext;
+
   return (
     <>
-      <FeedBackProvider>
-        <main className="container-page flex justify-center">
-          <Presentation />
-        </main>
-        <Widget />
-      </FeedBackProvider>
+      <div className={isNavbarOpen ?
+        "container-page flex justify-center navbar-open" :
+        "container-page flex justify-center"}>
+        <Main />
+      </div>
+      <Widget />
     </>
   )
 }

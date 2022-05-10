@@ -1,0 +1,72 @@
+nav {
+  transform: translateX(-50%);
+
+}
+
+
+#scroll-header {
+  @apply bg-brandColor-500 w-[100vw] z-50;
+
+}
+#scroll-header .open-menu{
+  @apply static;
+
+}
+#scroll-header svg:nth-child(1) path {
+  @apply fill-white;
+}
+
+#scroll-header button svg path {
+  stroke: white;
+}
+.menu {
+ visibility: hidden;
+ transition: transform 300ms ease-in-out;
+  transform: translateY(-100%);
+}
+.navbar-open .menu {
+  @apply bg-brandColor-500 w-[100%] h-[100vh] visible overflow-hidden fixed top-0 left-0 flex flex-col items-center justify-center gap-6;
+  transform: translateY(0);
+}
+
+.navbar-open {
+  @apply relative
+}
+
+.navbar-open .close-menu {
+  display: initial;
+  z-index: 10;
+}
+
+.close-menu {
+  display: none;
+}
+
+.navbar-open .open-menu {
+  display: none;
+}
+
+.navbar-open nav {
+  @apply w-[100%];
+
+}
+
+.navbar-open .doctor-logo {
+  z-index: 100;
+}
+
+.navbar-open svg:first-child path {
+  @apply fill-white;
+}
+
+.navbar-open ul svg:first-child path {
+  @apply fill-inherit;
+}
+
+.social-midia {
+  @apply flex items-center justify-center gap-2;
+}
+
+.begin .navbar-open>*:not(nav) {
+  display: none;
+}

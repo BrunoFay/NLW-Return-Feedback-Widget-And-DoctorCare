@@ -11,20 +11,13 @@
 .woman-img {
   object-position: 0 1.5rem;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .begin::before {
   content: '';
   @apply bg-brandColor-200 w-[100%] block h-[73.5rem] z-[-1] absolute top-0 left-0;
 }
-nav{
-  transform: translateX(-50%)
-}
-#scroll-header{
-  @apply bg-brandColor-500 w-[100vw] ;
-}
-#scroll-header svg:nth-child(1) path{
-  @apply fill-white ;
-}
-#scroll-header svg:nth-child(2) path{
- stroke:white ;
-}
+
+
+

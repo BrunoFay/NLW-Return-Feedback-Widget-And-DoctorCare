@@ -1,18 +1,31 @@
-import React, { FC, useState } from 'react'
-import { navbarContext } from './navbarContext'
+import React, { FC, useEffect, useState } from 'react'
+import NavbarContext from './navbarContext'
 
 interface IProviderProps {
   children: React.ReactNode
 }
-export  const NavbarProvider: FC<IProviderProps> = (props) => {
-  const [isNavBarOpen, setIsNavBarOpen] = useState(false)
+const NavbarProvider: FC<IProviderProps> = (props) => {
+  const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false)
+  function toggleNavbar() {
+    setIsNavbarOpen(!isNavbarOpen)
+  }
+  useEffect(() => {
+    if(isNavbarOpen) {
+      document.body.style.overflow = 'hidden'
+    }
+    return () => {
+      document.body.style.overflow = 'auto'
+    }
+  }, [isNavbarOpen])
   const valueToProvide = {
-    isNavBarOpen,
-    setIsNavBarOpen
+    isNavbarOpen,
+    setIsNavbarOpen,
+    toggleNavbar
   }
   return (
-    <navbarContext.Provider value={valueToProvide}>
+    <NavbarContext.Provider value={valueToProvide}>
       {props.children}
-    </navbarContext.Provider>
+    </NavbarContext.Provider>
   )
 }
+export default NavbarProvider

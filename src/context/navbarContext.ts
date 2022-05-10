@@ -1,7 +1,9 @@
 import { createContext } from "react";
 
-interface INavbarContext {
-  isNavbarOpen: boolean;
-  setIsNavbarOpen: () => void;
+export interface INavbarContext {
+  isNavbarOpen: boolean,
+  setIsNavbarOpen: (s:boolean) => void,
+  toggleNavbar: () => void
 }
-export const navbarContext = createContext<INavbarContext | {}>({})
+ const navbarContext = createContext<INavbarContext | {}>({})
+ export default navbarContext;

@@ -1,18 +1,20 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import navbarContext, { INavbarContext } from "../../context/navbarContext";
 
 export default function HeaderPage() {
   const [isScroll, setIsScroll] = useState(false);
-
+  const { toggleNavbar, isNavbarOpen } = useContext(navbarContext) as INavbarContext;
   function onPageScroll() {
     (scrollY > 0) ? setIsScroll(true) : setIsScroll(false);
   }
   useEffect(() => {
     window.addEventListener('scroll', onPageScroll);
+    
   });
 
   return (
-    <nav id={isScroll ? 'scroll-header' : ''} className='flex w-[23.438rem] h-[4.5rem] px-6 py-4 justify-between items-center fixed top-0 left-[50%] transition-all'>
-      <a href='#'>
+    <nav id={(isScroll && !isNavbarOpen) ? 'scroll-header' : ''} className='flex w-[23.438rem] h-[4.5rem] px-6 py-4 justify-between items-center fixed top-0 left-[50%] transition-all'>
+      <a href='#' className="doctor-logo">
         <svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 17.088V0.287999H5.16C8.12 0.287999 10.296 1.04 11.688 2.544C13.096 4.048 13.8 6.112 13.8 8.736C13.8 11.312 13.096 13.352 11.688 14.856C10.296 16.344 8.12 17.088 5.16 17.088H0ZM2.016 15.408H5.112C6.744 15.408 8.04 15.144 9 14.616C9.976 14.072 10.672 13.304 11.088 12.312C11.504 11.304 11.712 10.112 11.712 8.736C11.712 7.328 11.504 6.12 11.088 5.112C10.672 4.104 9.976 3.328 9 2.784C8.04 2.24 6.744 1.968 5.112 1.968H2.016V15.408Z" fill="#212529" />
           <path d="M22.4949 17.376C21.3749 17.376 20.3669 17.12 19.4709 16.608C18.5749 16.096 17.8629 15.376 17.3349 14.448C16.8229 13.504 16.5669 12.4 16.5669 11.136C16.5669 9.872 16.8309 8.776 17.3589 7.848C17.8869 6.904 18.5989 6.176 19.4949 5.664C20.4069 5.152 21.4229 4.896 22.5429 4.896C23.6629 4.896 24.6709 5.152 25.5669 5.664C26.4629 6.176 27.1669 6.904 27.6789 7.848C28.2069 8.776 28.4709 9.872 28.4709 11.136C28.4709 12.4 28.2069 13.504 27.6789 14.448C27.1509 15.376 26.4309 16.096 25.5189 16.608C24.6229 17.12 23.6149 17.376 22.4949 17.376ZM22.4949 15.648C23.1829 15.648 23.8229 15.48 24.4149 15.144C25.0069 14.808 25.4869 14.304 25.8549 13.632C26.2229 12.96 26.4069 12.128 26.4069 11.136C26.4069 10.144 26.2229 9.312 25.8549 8.64C25.5029 7.968 25.0309 7.464 24.4389 7.128C23.8469 6.792 23.2149 6.624 22.5429 6.624C21.8549 6.624 21.2149 6.792 20.6229 7.128C20.0309 7.464 19.5509 7.968 19.1829 8.64C18.8149 9.312 18.6309 10.144 18.6309 11.136C18.6309 12.128 18.8149 12.96 19.1829 13.632C19.5509 14.304 20.0229 14.808 20.5989 15.144C21.1909 15.48 21.8229 15.648 22.4949 15.648Z" fill="#212529" />
@@ -27,23 +29,25 @@ export default function HeaderPage() {
         </svg>
 
       </a>
-      <div>
-        <ul>
-          <li>
-            <a href=">/">Inicio</a>
+      <div className="menu transition">
+        <ul className="w-[17.125rem] h-[23.188rem] text-white text-2xl font-bold ">
+          <li className="py-5">
+            <a onClick={() => toggleNavbar()} href="#beggin">Inicio</a>
           </li>
-          <li>
-            <a href=">/">Sobre</a>
+          <li className="py-5">
+            <a onClick={() => toggleNavbar()} href="#services">Serviços</a>
 
           </li>
-          <li>
-            <a href=">/">Serviços</a>
+          <li className="py-5">
+            <a onClick={() => toggleNavbar()} href=">#about">Sobre</a>
           </li>
         </ul>
-        <a href="/">
+        <a
+          href="/"
+          className="w-[17.125rem] h-[3.438rem] px-8 py-4 bg-white rounded-[40px] font-bold text-lg uppercase text-brandColor-500 absolute top-[24rem]">
           Agende sua consulta
         </a>
-        <ul>
+        <ul className="social-midia fill-none">
           <li>
             <a href=">/insta">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,23 +57,26 @@ export default function HeaderPage() {
               </svg>
 
             </a>
+          </li>
+          <li>
             <a href=">/face">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
 
             </a>
+          </li>
+          <li>
             <a href=">/youtube">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-
             </a>
           </li>
         </ul>
       </div>
-      <button>
+      <button className="open-menu relative right-28" onClick={() => toggleNavbar()}>
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -77,12 +84,12 @@ export default function HeaderPage() {
         </svg>
 
       </button>
-      <button>
+      <button className="close-menu " onClick={() => toggleNavbar()}>
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
 
-      </button>
+      </button >
 
     </nav>
   )
