@@ -46,12 +46,12 @@ export default function Services() {
         <h2 className="font-bold text-3xl w-[19.625rem] h-[7.313rem] text-[#212529] ">Como podemos ajudá-lo a se sentir melhor?
         </h2>
       </section>
-      <section  ref={ref} className="w-[20.438rem] h-[86.5rem] flex flex-col gap-8 mx-auto mt-14 transition-opacity">
+      <section ref={ref} className="cards-service w-[20.438rem] h-[86.5rem] flex flex-col gap-8 mx-auto mt-14 transition-opacity">
         {CARDS.map(({ title, image, description }) => (
           <div className={`w-[20.438rem] h[12.938rem] flex flex-col gap-4 rounded-[6px] ring-1 ring-[#dce9e2] p-6 text-left `}>
             {image}
             <h3 className="text-2xl font-bold text-center">{title}</h3>
-            <p className="text-[#495057]"> {description}</p>
+            <p className="text-secondaryColor-500"> {description}</p>
           </div>
         ))}
       </section>

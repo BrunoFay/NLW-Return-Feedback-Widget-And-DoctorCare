@@ -1,5 +1,5 @@
 nav {
-  transform: translateX(-50%);
+  @apply translate-x-[-50%];
 
 }
 
@@ -8,10 +8,12 @@ nav {
   @apply bg-brandColor-500 w-[100vw] z-50;
 
 }
-#scroll-header .open-menu{
+
+#scroll-header .open-menu {
   @apply static;
 
 }
+
 #scroll-header svg:nth-child(1) path {
   @apply fill-white;
 }
@@ -19,31 +21,29 @@ nav {
 #scroll-header button svg path {
   stroke: white;
 }
+
 .menu {
- visibility: hidden;
- transition: transform 300ms ease-in-out;
+  visibility: hidden;
+  transition: transform 300ms ease-in-out;
   transform: translateY(-100%);
 }
+
 .navbar-open .menu {
-  @apply bg-brandColor-500 w-[100%] h-[100vh] visible overflow-hidden fixed top-0 left-0 flex flex-col items-center justify-center gap-6;
-  transform: translateY(0);
+  @apply bg-brandColor-500 w-[100%] h-[100vh] visible overflow-hidden fixed top-0 left-0 flex flex-col items-center justify-center gap-6 translate-y-0;
 }
 
-.navbar-open {
-  @apply relative
-}
 
 .navbar-open .close-menu {
   display: initial;
-  z-index: 10;
+  @apply z-10;
 }
 
 .close-menu {
-  display: none;
+  @apply hidden;
 }
 
 .navbar-open .open-menu {
-  display: none;
+  @apply hidden;
 }
 
 .navbar-open nav {
@@ -52,7 +52,7 @@ nav {
 }
 
 .navbar-open .doctor-logo {
-  z-index: 100;
+  @apply z-[100];
 }
 
 .navbar-open svg:first-child path {
@@ -67,6 +67,42 @@ nav {
   @apply flex items-center justify-center gap-2;
 }
 
-.begin .navbar-open>*:not(nav) {
-  display: none;
+.navbar-open #services,
+.navbar-open #beggin,
+.navbar-open #about,
+.navbar-open #contact {
+  @apply -z-50;
+}
+
+.navbar-open {
+  @apply relative;
+}
+
+@media screen and (max-width: 600px) {
+  .open-menu {
+    @apply absolute right-0 mr-3;
+
+  }
+
+  #scroll-header {
+    @apply bg-brandColor-500 w-[100vw] z-50;
+
+  }
+
+  #scroll-header .open-menu {
+    @apply absolute right-0;
+
+  }
+
+  .woman-img {
+    @apply w-[16.353rem]
+  }
+
+  .blackMan-img {
+    @apply w-[20.25rem]
+  }
+
+  .doctor-img {
+    @apply w-[20.438rem]
+  }
 }

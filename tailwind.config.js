@@ -11,6 +11,9 @@ module.exports = {
           100:'#FFFAF1',
           200:'#DCE9E2',
           500: '#00856F',
+        },
+        secondaryColor:{
+          500:'#495057',
         }
       },
       borderRadius: {
