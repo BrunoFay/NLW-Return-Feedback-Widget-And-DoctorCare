@@ -74,20 +74,31 @@ nav {
 }
 
 .navbar-open {
-  @apply relative;
+  @apply relative ;
 }
 
-@media screen and (max-width: 600px) {
-  nav {
-    @apply w-[23.438rem];
+ 
+@media screen and (max-width: 764px) {
+ 
+  .doctor-logo{
+    @apply px-5;
   }
-
+  #scroll-header nav{
+    @apply bg-brandColor-500 px-4 z-50 transition-colors w-[100%];
+  }
+  .navbar-open nav {
+    @apply  px-4;
+  }
+  nav {
+    @apply w-[23.438rem]  h-[4.5rem];
+  }
+  
   .nav-links {
     @apply w-[17.125rem] h-[23.188rem] text-2xl font-bold text-white py-4 ;
   }
 
   .nav-whats-btn {
-    @apply absolute top-[24rem] w-[17.125rem] h-[3.438rem] font-bold text-lg bg-white;
+    @apply absolute top-[24rem] flex items-center w-[17.125rem] h-[3.438rem] font-bold text-lg bg-white;
   }
 
   .menu {
@@ -95,22 +106,21 @@ nav {
     transition: transform 300ms ease-in-out;
     transform: translateY(-100%);
   }
-
+  .menu .nav-links{
+    @apply text-white ;
+  }
   .main-container {
     @apply w-[23.438rem] h-[67.5rem];
     
   }
-
   .open-menu {
     @apply absolute right-0 mr-3;
 
   }
-
   #scroll-header .open-menu {
     @apply absolute right-0;
 
   }
-
   .woman-img {
     @apply w-[16.353rem]
   }
@@ -118,14 +128,13 @@ nav {
   .blackMan-img {
     @apply w-[20.25rem]
   }
-
+  .about-infos{
+    @apply gap-4 flex flex-col
+  }
   .doctor-img {
     @apply w-[20.438rem]
   }
-  #scroll-header {
-    @apply  w-[100vw] ;
-  
-  }
+
   #beggin{
     @apply pt-[4.5rem]
   }
@@ -140,5 +149,25 @@ nav {
   }
   .presentation-cards{
     @apply flex-col w-[20.438rem] h-[29.375rem] gap-[3.75rem]
+  }
+
+}
+@media screen and (max-width: 1364px) and (min-width: 765px) {
+  .cards-service {
+    @apply  mb-80 w-[20.438rem] h-[100rem] 
+  }
+  .presentation-h1 {
+    @apply break-words ;
+  }
+  #beggin .woman-img{
+    @apply w-[20.438rem] relative right-12;
+    
+  }
+ 
+  #services{
+    @apply  h-[67.625rem]
+  }
+  .presentation-cards{
+    @apply py-0 relative bottom-14 left-2
   }
 }

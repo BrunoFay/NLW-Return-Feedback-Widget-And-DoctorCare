@@ -1,8 +1,10 @@
 
 export default function FooterPage() {
   return (
-    <footer className=' bg-brandColor-500 gap-6 flex lg:flex-row lg:justify-between lg:px-28 flex-col items-center mx-auto text-left  py-8 w-[100vw]'>
-      <div className="lg:flex lg:gap-6 lg:flex-col">
+    <footer
+      className=' bg-brandColor-500 gap-6 flex lg:flex-row lg:justify-between 
+    lg:px-28 flex-col items-center mx-auto text-left  py-8 w-[100%]'>
+      <div className="flex lg:gap-6 gap-2 flex-col">
         <div className="w-[14.75rem] h-[2rem]">
           <svg width="236" height="31" viewBox="0 0 236 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 30.4862V0.513811H9.16546C14.4232 0.513811 18.2883 1.85543 20.7608 4.53867C23.2618 7.22192 24.5123 10.9042 24.5123 15.5856C24.5123 20.1814 23.2618 23.8209 20.7608 26.5041C18.2883 29.1588 14.4232 30.4862 9.16546 30.4862H0ZM3.58093 27.489H9.0802C11.979 27.489 14.2811 27.018 15.9863 26.076C17.7199 25.1054 18.9562 23.7353 19.6951 21.9655C20.434 20.1671 20.8035 18.0405 20.8035 15.5856C20.8035 13.0737 20.434 10.9185 19.6951 9.12017C18.9562 7.32182 17.7199 5.93738 15.9863 4.96685C14.2811 3.99632 11.979 3.51105 9.0802 3.51105H3.58093V27.489Z" fill="white" />

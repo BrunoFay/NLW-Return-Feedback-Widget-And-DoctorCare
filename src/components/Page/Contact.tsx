@@ -9,13 +9,13 @@ export default function Contact() {
   return (
     <section
       id='contact'
-      className='w-[23.438rem] h-[45.938rem] flex flex-col items-center  lg:items-center lg:justify-evenly  lg:h-[45.188rem] lg:w-[100%] lg:flex-row'>
+      className='w-[23.438rem] h-[45.938rem] flex flex-col items-center  md:items-center md:justify-evenly  md:h-[45.188rem] md:w-[100%] md:flex-row'>
       <div
-        className='flex self-start flex-col lg:gap-9 lg:mt-[3.75rem] items-center justify-center  lg:h-[max(19rem)]'
+        className='flex self-start flex-col md:gap-9 md:mt-[3.75rem] items-center justify-center  md:h-[max(19rem)]'
         ref={ref}>
         <div
           className='flex self-start flex-col items-start text-left 
-           lg:mt-[12rem] lg:pt-12 px-6 mt-[6.25rem] pt-[1.25rem] gap-8'>
+           md:mt-[12rem] md:pt-12 px-6 mt-[6.25rem] pt-[1.25rem] gap-8'>
           <h2 className='font-bold text-3xl  w-[18.563rem]'>Entre em contato com a gente!</h2>
           <ul className='flex flex-col gap-4'>
             <li className='flex gap-2 text-secondaryColor-500'>
@@ -36,7 +36,7 @@ export default function Contact() {
             </li>
           </ul>
         </div>
-        <button className="bg-brandColor-500 text-white gap-[1rem] w-[16.438rem] flex justify-center py-4 rounded-[2.5rem] font-bold uppercase mt-[2rem] mx-auto lg:mx-4 lg:mt-0 lg:self-start"  >
+        <button className="bg-brandColor-500 text-white gap-[1rem] w-[16.438rem] flex justify-center py-4 rounded-[2.5rem] font-bold uppercase mt-[2rem] mx-auto md:mx-4 md:mt-0 md:self-start"  >
           <img
             className=""
             src={WhatsAppIcon}
@@ -45,7 +45,7 @@ export default function Contact() {
         </button>
       </div>
       <img
-        className='blackMan-img mt-[3.75rem] lg:mt-0 lg:h-[max(23.75rem)] lg:w-max-[32.938rem] pb-[6.25rem] '
+        className='blackMan-img mt-[3.75rem] md:mt-0 md:h-[max(23.75rem)] md:w-max-[32.938rem] pb-[6.25rem] '
         src={BlackManSmillingWithSmartphone}
         alt="black man smiling looking at a smartphone" />
     </section>

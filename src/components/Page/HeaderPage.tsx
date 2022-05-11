@@ -14,8 +14,8 @@ export default function HeaderPage() {
 
 
   return (
-    <header id={(isScroll && !isNavbarOpen) ? 'scroll-header' : ''} className="lg:fixed  lg:w-[100vw] lg:h-[5.5rem] ">
-      <nav className='flex lg:w-[min(70rem,100%)]  lg:px-[1vw] py-4 justify-between items-center fixed top-0 left-[50%] lg:gap-1 transition-all '>
+    <header id={(isScroll && !isNavbarOpen) ? 'scroll-header' : ''} className="md:fixed  md:w-[100vw] md:h-[5.5rem] ">
+      <nav className='flex md:w-[min(70rem,100%)]  md:px-[1vw] py-4 justify-between items-center fixed top-0 left-[50%] md:gap-1 transition-all '>
         <a href='#' className="doctor-logo">
           <svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 17.088V0.287999H5.16C8.12 0.287999 10.296 1.04 11.688 2.544C13.096 4.048 13.8 6.112 13.8 8.736C13.8 11.312 13.096 13.352 11.688 14.856C10.296 16.344 8.12 17.088 5.16 17.088H0ZM2.016 15.408H5.112C6.744 15.408 8.04 15.144 9 14.616C9.976 14.072 10.672 13.304 11.088 12.312C11.504 11.304 11.712 10.112 11.712 8.736C11.712 7.328 11.504 6.12 11.088 5.112C10.672 4.104 9.976 3.328 9 2.784C8.04 2.24 6.744 1.968 5.112 1.968H2.016V15.408Z" fill="#212529" />
@@ -31,27 +31,27 @@ export default function HeaderPage() {
           </svg>
 
         </a>
-        <div className="menu lg:items-center lg:justify-between w-[40rem] lg:flex">
-          <ul className="nav-links lg:flex lg:font-normal lg:text-base lg:gap-8 text-brandColor-500 transition-colors ">
-            <li className="py-5 lg:pb-[1.65rem] lg:border-b-2 lg:hover:border-brandColor-500 border-transparent  lg:opacity-60 lg:hover:opacity-100 lg:px-1 " >
+        <div className="menu md:items-center md:justify-between w-[40rem] md:flex">
+          <ul className="nav-links md:flex md:font-normal md:text-base md:gap-8 text-brandColor-500 transition-colors ">
+            <li className="py-5 md:pb-[1.65rem] md:border-b-2 md:hover:border-brandColor-500 border-transparent  md:opacity-60 md:hover:opacity-100 md:px-1 " >
               <a onClick={() => setIsNavbarOpen(false)} href="#beggin">Inicio</a>
             </li>
-            <li className="py-5 lg:pb-[1.65rem] lg:border-b-2 lg:hover:border-brandColor-500 border-transparent  lg:opacity-60 lg:hover:opacity-100 lg:px-1 ">
+            <li className="py-5 md:pb-[1.65rem] md:border-b-2 md:hover:border-brandColor-500 border-transparent  md:opacity-60 md:hover:opacity-100 md:px-1 ">
               <a onClick={() => setIsNavbarOpen(false)} href="#services">Serviços</a>
 
             </li>
-            <li className="py-5 lg:pb-[1.65rem] lg:border-b-2 lg:hover:border-brandColor-500 border-transparent  lg:opacity-60 lg:hover:opacity-100 lg:px-1 ">
+            <li className="py-5 md:pb-[1.65rem] md:border-b-2 md:hover:border-brandColor-500 border-transparent  md:opacity-60 md:hover:opacity-100 md:px-1 ">
               <a onClick={() => setIsNavbarOpen(false)} href=">#about">Sobre</a>
             </li>
           </ul>
           <a
             onClick={() => setIsNavbarOpen(false)}
             href="#contact"
-            className="nav-whats-btn text-center px-8 lg:py-2 ;
-            lg:hover:bg-white lg:ring-1 lg:ring-brandColor-500 rounded-[40px] lg:h-[2.375rem] uppercase text-brandColor-500 ">
+            className="nav-whats-btn text-center px-8 md:py-2 ;
+            md:hover:bg-white md:ring-1 md:ring-brandColor-500 rounded-[40px] md:h-[2.375rem] uppercase text-brandColor-500 ">
             Agende sua consulta
           </a>
-          <ul className="social-midia lg:hidden fill-none">
+          <ul className="social-midia md:hidden fill-none">
             <li>
               <a href=">/insta">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@ export default function HeaderPage() {
             </li>
           </ul>
         </div>
-        <button className="open-menu lg:hidden md:relative sm:right-20 " onClick={() => toggleNavbar()}>
+        <button className="open-menu md:hidden md:relative sm:right-20 " onClick={() => toggleNavbar()}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

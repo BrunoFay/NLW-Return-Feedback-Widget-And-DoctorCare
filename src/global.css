@@ -19,5 +19,9 @@ html{
   @apply bg-brandColor-200 w-[100%] block h-[73.5rem] lg:h-[44.75rem] z-[-1] absolute top-0 left-0;
 }
 
-
-
+@media screen and (min-width: 376px) and (max-width: 764px){
+  .main-container::after {
+    content: '';
+    @apply bg-brandColor-500 w-[100%] block h-[13.2rem] overflow-hidden z-[-1] absolute top-[293.7rem] left-0;
+  }
+} 
