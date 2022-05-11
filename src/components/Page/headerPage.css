@@ -7,8 +7,8 @@ nav {
   @apply bg-brandColor-500 z-50 transition-colors;
 
 }
-#scroll-header .nav-links  {
-  @apply lg:text-[#ffffff]  transition-opacity;
+#scroll-header .nav-links li {
+  @apply lg:text-[#ffffff] lg:hover:border-white transition-colors ;
 }
 #scroll-header .nav-whats-btn {
   @apply lg:ring-1 lg:ring-[#ffffff] lg:text-white transition-colors lg:hover:text-brandColor-500;
@@ -24,8 +24,6 @@ nav {
 #scroll-header button svg path {
   stroke: white;
 }
-
-
 
 .navbar-open .menu {
   @apply bg-brandColor-500 w-[100%] h-[100vh] visible  fixed top-0 left-0 flex flex-col items-center justify-center gap-6 translate-y-0;
@@ -100,6 +98,7 @@ nav {
 
   .main-container {
     @apply w-[23.438rem] h-[67.5rem];
+    
   }
 
   .open-menu {

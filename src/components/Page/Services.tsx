@@ -40,15 +40,20 @@ export default function Services() {
   });
 
   return (
-    <section id='services' className="w-[23.438rem] h-[127.125rem] text-center flex flex-col" >
-      <section className="mt-[7.875rem] h-[9.625rem] w-[19.625rem] mx-auto gap-4 flex flex-col">
+    <section
+      id='services'
+      className="w-[23.438rem] lg:w-[80%]  lg:self-center lg:h-[57.625rem]
+     h-[127.125rem] text-center flex flex-col" >
+      <section className="mt-[7.875rem] h-[9.625rem] lg:items-center w-[19.625rem] mx-auto gap-4 flex flex-col">
         <h4 className="text-brandColor-500 font-bold text-base">SERVIÇOS</h4>
-        <h2 className="font-bold text-3xl w-[19.625rem] h-[7.313rem] text-[#212529] ">Como podemos ajudá-lo a se sentir melhor?
+        <h2 className="font-bold text-3xl w-[19.625rem] lg:w-[23rem] h-[7.313rem] text-[#212529] ">Como podemos ajudá-lo a se sentir melhor?
         </h2>
       </section>
-      <section ref={ref} className="cards-service w-[20.438rem] h-[86.5rem] flex flex-col gap-8 mx-auto mt-14 transition-opacity">
+      <section
+        ref={ref}
+        className="cards-service   lg:items-center lg:justify-center lg:h-[28.375rem] lg:w-[100%] w-[20.438rem] h-[86.5rem] lg:flex-row lg:flex-wrap flex flex-col gap-8 lg:gap-10 mx-auto mt-14 transition-opacity">
         {CARDS.map(({ title, image, description }) => (
-          <div className={`w-[20.438rem] h[12.938rem] flex flex-col gap-4 rounded-[6px] ring-1 ring-[#dce9e2] p-6 text-left `}>
+          <div className={`w-[20.438rem]  h-[12.938rem] flex flex-col gap-4 rounded-[6px] ring-1 ring-[#dce9e2] p-6 text-left `}>
             {image}
             <h3 className="text-2xl font-bold text-center">{title}</h3>
             <p className="text-secondaryColor-500"> {description}</p>

@@ -16,7 +16,7 @@ html{
 }
 .main-container::before {
   content: '';
-  @apply bg-brandColor-200 w-[100%] block h-[73.5rem] z-[-1] absolute top-0 left-0;
+  @apply bg-brandColor-200 w-[100%] block h-[73.5rem] lg:h-[44.75rem] z-[-1] absolute top-0 left-0;
 }
 
 
