@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <section id='contact' className='w-[23.438rem] h-[45.938rem] flex flex-col items-center'>
-      <div className='flex self-start flex-col items-start' ref={ref}>
+      <div className='flex self-start flex-col items-center justify-center' ref={ref}>
         <div className='flex self-start flex-col items-start text-left px-6 mt-[6.25rem] pt-[1.25rem] gap-8'>
           <h2 className='font-bold text-3xl w-[18.563rem]'>Entre em contato com a gente!</h2>
           <ul className='flex flex-col gap-4'>
@@ -30,13 +30,13 @@ export default function Contact() {
             </li>
           </ul>
         </div>
-        <button className="bg-brandColor-500 text-white gap-[1rem] w-[16.438rem] flex justify-center py-4  rounded-[2.5rem] font-bold uppercase mt-[2rem] mx-auto" >
+        <button className="bg-brandColor-500 text-white gap-[1rem] w-[16.438rem] flex justify-center py-4 rounded-[2.5rem] font-bold uppercase mt-[2rem] mx-auto" >
           <img className="" src={WhatsAppIcon} alt="whatsAPP icon" />
           Agende sua consulta
         </button>
       </div>
       <img
-        className='blackMan-img mt-[3.75rem] pb-[6.25rem] '
+        className='blackMan-img mt-[3.75rem]  pb-[6.25rem] '
         src={BlackManSmillingWithSmartphone}
         alt="black man smiling looking at a smartphone" />
     </section>
