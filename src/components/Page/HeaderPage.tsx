@@ -45,7 +45,7 @@ export default function HeaderPage() {
             </li>
           </ul>
           <a
-            onClick={() => toggleNavbar()}
+            onClick={() => setIsNavbarOpen(false)}
             href="#contact"
             className="nav-whats-btn text-center px-8 lg:py-2 ;
             lg:hover:bg-white lg:ring-1 lg:ring-brandColor-500 rounded-[40px] lg:h-[2.375rem] uppercase text-brandColor-500 ">
