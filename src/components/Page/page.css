@@ -11,12 +11,12 @@ nav {
   @apply lg:text-[#ffffff] lg:hover:border-white transition-colors ;
 }
 #scroll-header .nav-whats-btn {
-  @apply lg:ring-1 lg:ring-[#ffffff] lg:text-white transition-colors lg:hover:text-brandColor-500;
+  @apply lg:ring-1 lg:ring-[#ffffff] lg:text-white transition-colors 
+  lg:hover:text-brandColor-500 lg:hover:bg-white;
 }
 #scroll-header .open-menu {
   @apply static;
 }
-
 #scroll-header svg:nth-child(1) path {
   @apply fill-white;
 }

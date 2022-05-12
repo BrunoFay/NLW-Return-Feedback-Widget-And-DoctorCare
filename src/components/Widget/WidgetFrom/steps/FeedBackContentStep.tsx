@@ -39,6 +39,7 @@ export default function FeedBackContentStep() {
         setFeedbackSendSuccessfully(true)
       })
   }
+console.log(screenShot);
 
   return (
     <>

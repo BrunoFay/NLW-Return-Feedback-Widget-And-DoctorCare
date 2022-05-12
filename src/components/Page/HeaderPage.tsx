@@ -48,7 +48,7 @@ export default function HeaderPage() {
             onClick={() => setIsNavbarOpen(false)}
             href="#contact"
             className="nav-whats-btn text-center px-8 md:py-2 ;
-            md:hover:bg-white md:ring-1 md:ring-brandColor-500 rounded-[40px] md:h-[2.375rem] uppercase text-brandColor-500 ">
+            md:hover:bg-brandColor-500 md:hover:text-white md:ring-1 md:ring-brandColor-500 rounded-[40px] md:h-[2.375rem] uppercase text-brandColor-500 ">
             Agende sua consulta
           </a>
           <ul className="social-midia md:hidden fill-none">
