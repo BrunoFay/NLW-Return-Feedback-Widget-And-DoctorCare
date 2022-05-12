@@ -9,7 +9,6 @@ interface IScreenShot {
 }
 export default function ScreenshotButton({ setScreenShot, screenShot }: IScreenShot) {
   const [isTakingScreenshot, setIsTakingScreenshot] = useState(false)
-console.log(screenShot);
 
   const handleTakeScreenshot = async () => {
     setIsTakingScreenshot(true)
