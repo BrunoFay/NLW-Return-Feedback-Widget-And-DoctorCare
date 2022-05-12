@@ -34,6 +34,9 @@ the CSS organization may be a little different from the standard, but refactorin
 ## layout
 You can view the layout of the project through [this link](https://www.figma.com/community/file/1102912263666619803) You must have a Figma account to access it.
 
+## Server link repository
+You can view the ropository of the feedwidget server on [this link](https://github.com/BrunoFay/Server--NWL-Feedback-Widget)
+
 # Projeto NLW Feedback Front-end + Projeto NLW DoctorCare [PORTUGUESE]
 
 Resolvi unir os dois projetos da NLW Return em um único projeto.
@@ -58,3 +61,6 @@ a organização do CSS pode estar meio diferente do padrão, mas refatorar é vi
 
 ##  Layout
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1102912263666619803). É necessário ter conta no Figma para acessá-lo.
+
+## Link do repositorio Feedback Widget Server
+Você pode visualizar o repositorio do servidor criado para o Feedback Widget [clicando aqui](https://github.com/BrunoFay/Server--NWL-Feedback-Widget)
