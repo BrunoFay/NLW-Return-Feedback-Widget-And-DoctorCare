@@ -17,6 +17,7 @@ const NavbarProvider: FC<IProviderProps> = (props) => {
       document.body.style.overflow = 'auto'
     }
   }, [isNavbarOpen])
+  
   const valueToProvide = {
     isNavbarOpen,
     setIsNavbarOpen,

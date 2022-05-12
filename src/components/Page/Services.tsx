@@ -37,7 +37,7 @@ const CARDS = [
 export default function Services() {
   const { ref } = useParallax<HTMLImageElement>({
     opacity: [0.1, 4],
-  });
+  }); 
 
   return (
     <section
@@ -50,7 +50,7 @@ export default function Services() {
         </h2>
       </section>
       <section
-        ref={ref}
+         ref={ref} 
         className="cards-service md:items-center md:justify-center md:h-[28.375rem] md:w-[100%] w-[20.438rem] h-[86.5rem] md:flex-row md:flex-wrap flex flex-col gap-8 md:gap-10 mx-auto mt-14 transition-opacity">
         {CARDS.map(({ title, image, description }) => (
           <div key={title} className={`w-[20.438rem]  md:shadow-lg transition-shadow

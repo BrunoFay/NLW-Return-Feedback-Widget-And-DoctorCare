@@ -1,10 +1,10 @@
 import { useParallax } from 'react-scroll-parallax';
-import BlackManSmillingWithSmartphone from '../../assets/blackManSmillingWithSmartphone.svg'
+import BlackManSmillingWithSmartphone from '../../assets/blackmanSmilling.png'
 import WhatsAppIcon from "../../assets/whatsAppIcon.svg"
 
 
 export default function Contact() {
-  const { ref } = useParallax<HTMLImageElement>({ opacity: [0, 2, 'easeInOut'] });
+   const { ref } = useParallax<HTMLImageElement>({ opacity: [0, 2, 'easeInOut'] }); 
 
   return (
     <section
@@ -12,7 +12,7 @@ export default function Contact() {
       className='w-[23.438rem] h-[45.938rem] flex flex-col items-center  md:items-center md:justify-evenly  md:h-[45.188rem] md:w-[100%] md:flex-row'>
       <div
         className='flex self-start flex-col md:gap-9 md:mt-[3.75rem] items-center justify-center  md:h-[max(19rem)]'
-        ref={ref}>
+         ref={ref} >
         <div
           className='flex self-start flex-col items-start text-left 
            md:mt-[12rem] md:pt-12 px-6 mt-[6.25rem] pt-[1.25rem] gap-8'>
@@ -47,6 +47,7 @@ export default function Contact() {
       <img
         className='blackMan-img mt-[3.75rem] md:mt-0 md:h-[max(23.75rem)] md:w-max-[32.938rem] pb-[6.25rem] '
         src={BlackManSmillingWithSmartphone}
+        loading='lazy'
         alt="black man smiling looking at a smartphone" />
     </section>
   )

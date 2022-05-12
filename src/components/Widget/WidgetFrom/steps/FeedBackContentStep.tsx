@@ -22,7 +22,7 @@ export default function FeedBackContentStep() {
   const handleSubmitFeedBack = async (e: FormEvent) => {
     e.preventDefault()
     setIsFeedbackSend(true)
-    screenShot ?
+ /*    screenShot ?
       await api.post('/feedbacks', {
         type: feedBackTypeState,
         comment: feedBackComment,
@@ -37,9 +37,13 @@ export default function FeedBackContentStep() {
       }).finally(() => {
         setIsFeedbackSend(false)
         setFeedbackSendSuccessfully(true)
-      })
+      }) */
+      setTimeout(() => {
+        setIsFeedbackSend(false)
+        setFeedbackSendSuccessfully(true)
+
+      }, 1500)
   }
-console.log(screenShot);
 
   return (
     <>

@@ -17,7 +17,7 @@ const INITIAL_STATS = [
   },
 ]
 export default function Presentation() {
-  const { ref } = useParallax<HTMLImageElement>({ opacity: [0, 2, 'easeInOut'] });
+  const { ref } = useParallax<HTMLImageElement>({ opacity: [0, 2, 'easeInOut'] }); 
   return (
     <>
       <section id="beggin" className=" md:flex md:flex-col ">
@@ -40,7 +40,7 @@ export default function Presentation() {
           </div>
           <img className="mt-[3.75rem] md:h-[max(20rem,34.188rem)] block mx-auto woman-img" src={Woman} alt="black woman wearing green sweater" />
         </div>
-        <div ref={ref}
+        <div  ref={ref} 
           className="presentation-cards md:w-[80%] md:h-[13.125rem] md:items-center
            md:justify-evenly bg-brandColor-100 mx-auto flex  justify-center 
            py-10 ring-1 ring-[#dce9e2] rounded-[0.375rem] md:shadow-xl md:shadow-brandColor-500">
