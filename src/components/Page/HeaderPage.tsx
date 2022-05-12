@@ -41,7 +41,7 @@ export default function HeaderPage() {
 
             </li>
             <li className="py-5 md:pb-[1.65rem] md:border-b-2 md:hover:border-brandColor-500 border-transparent  md:opacity-60 md:hover:opacity-100 md:px-1 ">
-              <a onClick={() => setIsNavbarOpen(false)} href=">#about">Sobre</a>
+              <a onClick={() => setIsNavbarOpen(false)} href="#about">Sobre</a>
             </li>
           </ul>
           <a
