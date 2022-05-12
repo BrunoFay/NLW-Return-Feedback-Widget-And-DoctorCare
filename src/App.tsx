@@ -13,7 +13,7 @@ export function App() {
         "container-page flex justify-center"}>
         <Main />
       </div>
-     {/*  <Widget /> */}
+      <Widget /> 
     </>
   )
 }

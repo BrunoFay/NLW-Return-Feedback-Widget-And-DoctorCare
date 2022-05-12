@@ -9,10 +9,11 @@ interface IScreenShot {
 }
 export default function ScreenshotButton({ setScreenShot, screenShot }: IScreenShot) {
   const [isTakingScreenshot, setIsTakingScreenshot] = useState(false)
+console.log(screenShot);
 
   const handleTakeScreenshot = async () => {
     setIsTakingScreenshot(true)
-    const canvas = await html2canvas(document.body);
+    const canvas = await html2canvas(document.querySelector('html')!);
     const base64Img = canvas.toDataURL("image/png");
     setScreenShot(base64Img)
     setIsTakingScreenshot(false)
@@ -26,7 +27,7 @@ export default function ScreenshotButton({ setScreenShot, screenShot }: IScreenS
         style={{
           backgroundImage: `url(${screenShot})`,
           backgroundPosition: 'right bottom ',
-          backgroundSize: 100
+          backgroundSize: 1
         }}
       >
         <Trash weight="fill" />

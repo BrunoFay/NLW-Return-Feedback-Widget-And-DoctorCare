@@ -43,7 +43,7 @@ export default function Presentation() {
         <div ref={ref}
           className="presentation-cards md:w-[80%] md:h-[13.125rem] md:items-center
            md:justify-evenly bg-brandColor-100 mx-auto flex  justify-center 
-           py-10 ring-1 ring-[#dce9e2] rounded-[0.375rem]">
+           py-10 ring-1 ring-[#dce9e2] rounded-[0.375rem] md:shadow-xl md:shadow-brandColor-500">
           {INITIAL_STATS.map(({ title, note }) => (
             <div className="presentation-card flex md:w-[20rem] md:border-r-2 md:border-r-brandColor-500 flex-col gap-1" >
               <h3 className="text-5xl font-bold" >{note}</h3>

@@ -53,7 +53,8 @@ export default function Services() {
         ref={ref}
         className="cards-service md:items-center md:justify-center md:h-[28.375rem] md:w-[100%] w-[20.438rem] h-[86.5rem] md:flex-row md:flex-wrap flex flex-col gap-8 md:gap-10 mx-auto mt-14 transition-opacity">
         {CARDS.map(({ title, image, description }) => (
-          <div className={`w-[20.438rem]  h-[12.938rem] flex flex-col gap-4 rounded-[6px] ring-1 ring-[#dce9e2] p-6 text-left `}>
+          <div className={`w-[20.438rem]  md:shadow-lg transition-shadow
+          md:hover:shadow-brandColor-500 h-[12.938rem] flex flex-col gap-4 rounded-[6px] ring-1 ring-[#dce9e2] p-6 text-left `}>
             {image}
             <h3 className="text-2xl font-bold text-center">{title}</h3>
             <p className="text-secondaryColor-500"> {description}</p>
