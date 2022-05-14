@@ -37,7 +37,7 @@ export default function ScreenshotButton({ setScreenShot, screenShot }: IScreenS
     <button
       type='button'
       onClick={handleTakeScreenshot}
-      className='p-2 rounded-md bg-zinc-800 hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-mainYellow-500  transition-colors'>
+      className='p-2 rounded-md bg-zinc-300 hover:bg-zinc-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-mainYellow-500  transition-colors'>
       {isTakingScreenshot ? <Loading /> : <Camera className='w-6 h-6' />}
     </button>
   )

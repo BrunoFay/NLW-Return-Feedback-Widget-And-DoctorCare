@@ -17,7 +17,7 @@ export default function FeedBackSuccessStep() {
         <span className="text-xl mt-6">Thanks for your Feedback !</span>
         <button
           type="button"
-          className="py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent leading-6 transition-colors hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-mainYellow-500"
+          className="py-2 px-6 mt-6 hover:bg-brandColor-500 text-white rounded-md border-transparent leading-6 transition-colors bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brandColor-500"
           onClick={resetFeedBack}
         >
           Send another Feedback
