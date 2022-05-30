@@ -45,6 +45,10 @@ https://nlw-return-feedback-widget-doctorcare-tau.vercel.app/
 
 ## Server link repository
 You can view the ropository of the feedwidget server on [this link](https://github.com/BrunoFay/Server--NWL-Feedback-Widget)
+<br/>
+<hr/>
+<br/>
+<br/>
 
 # Projeto NLW Feedback Front-end + Projeto NLW DoctorCare [PORTUGUESE]
 
