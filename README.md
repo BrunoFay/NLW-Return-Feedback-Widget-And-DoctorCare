@@ -34,6 +34,15 @@ the CSS organization may be a little different from the standard, but refactorin
 ## layout
 You can view the layout of the project through [this link](https://www.figma.com/community/file/1102912263666619803) You must have a Figma account to access it.
 
+## To view a video of my version of the project, click on the image below!
+
+[![Watch the video](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvX7XjW8SbO7M8RFY41EYr8WtFq9QouZ7L5A&usqp=CAU)](https://www.youtube.com/watch?v=zmQx-Ofl0vw)
+
+## To see the project working, click on the link below!
+
+https://nlw-return-feedback-widget-doctorcare-tau.vercel.app/
+
+
 ## Server link repository
 You can view the ropository of the feedwidget server on [this link](https://github.com/BrunoFay/Server--NWL-Feedback-Widget)
 
@@ -61,6 +70,14 @@ a organização do CSS pode estar meio diferente do padrão, mas refatorar é vi
 
 ##  Layout
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1102912263666619803). É necessário ter conta no Figma para acessá-lo.
+
+## Para visualizar um video da minha versão do projeto , clique na imagem abaixo !
+
+[![Watch the video](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvX7XjW8SbO7M8RFY41EYr8WtFq9QouZ7L5A&usqp=CAU)](https://www.youtube.com/watch?v=zmQx-Ofl0vw)
+
+## Para visualizar o projeto funcionando, clique no link abaixo !
+
+https://nlw-return-feedback-widget-doctorcare-tau.vercel.app/
 
 ## Link do repositorio Feedback Widget Server
 Você pode visualizar o repositorio do servidor criado para o Feedback Widget [clicando aqui](https://github.com/BrunoFay/Server--NWL-Feedback-Widget)
