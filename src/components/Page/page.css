@@ -8,7 +8,7 @@ nav {
 
 }
 #scroll-header .nav-links li {
-  @apply lg:text-[#ffffff] lg:hover:border-white transition-colors ;
+  @apply md:text-[#ffffff] md:hover:border-white transition-colors ;
 }
 #scroll-header .nav-whats-btn {
   @apply lg:ring-1 lg:ring-[#ffffff] lg:text-white transition-colors 
@@ -31,16 +31,14 @@ nav {
 
 .navbar-open .close-menu {
   display: initial;
-  @apply z-10;
+  @apply z-10 relative right-4;
 }
 
 .close-menu {
   @apply hidden;
 }
 
-.navbar-open .open-menu {
-  @apply hidden;
-}
+
 
 .navbar-open nav {
   @apply w-[100%];
@@ -83,6 +81,9 @@ nav {
   .doctor-logo{
     @apply px-5;
   }
+  .navbar-open .doctor-logo{
+    @apply px-0;
+  }
   #scroll-header nav{
     @apply bg-brandColor-500 px-4 z-50 transition-colors w-[100%];
   }
@@ -114,13 +115,14 @@ nav {
     
   }
   .open-menu {
-    @apply absolute right-0 mr-3;
+    @apply relative right-[8rem] ;
 
   }
   #scroll-header .open-menu {
-    @apply absolute right-0;
+    @apply absolute right-10;
 
   }
+
   .woman-img {
     @apply w-[16.353rem]
   }
@@ -153,6 +155,7 @@ nav {
 
 }
 @media screen and (max-width: 1364px) and (min-width: 765px) {
+
   .cards-service {
     @apply  mb-80 w-[20.438rem] h-[100rem] 
   }
@@ -163,11 +166,19 @@ nav {
     @apply w-[20.438rem] relative right-12;
     
   }
- 
+  .nav-whats-btn {
+    @apply text-sm relative right-[10%]
+  }
   #services{
     @apply  h-[67.625rem]
   }
   .presentation-cards{
     @apply py-0 relative bottom-14 left-2
+  }
+  
+}
+@media screen and (max-width: 870px) {
+  .nav-links {
+    @apply relative left-[10%]
   }
 }
