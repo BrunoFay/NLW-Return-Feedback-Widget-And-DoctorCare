@@ -31,7 +31,7 @@ nav {
 
 .navbar-open .close-menu {
   display: initial;
-  @apply z-10 relative right-4;
+  @apply z-10;
 }
 
 .close-menu {
@@ -167,7 +167,7 @@ nav {
     
   }
   .nav-whats-btn {
-    @apply text-sm relative right-[10%]
+    @apply text-sm relative right-[2%]
   }
   #services{
     @apply  h-[67.625rem]
@@ -177,8 +177,9 @@ nav {
   }
   
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 870px) and (min-width: 766px) {
   .nav-links {
     @apply relative left-[10%]
   }
+
 }
